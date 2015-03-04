@@ -30,9 +30,9 @@ Then, from your first controller:
 // ...
 
 - (void)pushToAnotherController {
-  UIViewController *yetAnotherViewController = [[UIView controller alloc] init];
+  UIViewController *yetAnotherViewController = [[UIViewController alloc] init];
   [(MainViewController *)self.parentViewController transitionToViewController:yetAnotherViewController
-                                                                     duration:20
+                                                                     duration:1.0f
                                                                       options:UIViewAnimationOptionCurveEaseIn
                                                                    animations:nil
                                                                    completion:nil]
